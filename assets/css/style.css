@@ -72,6 +72,12 @@
   CSS reset
    ========================================================================== */
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 * {
   font-family: Vazir;
   margin: 0;
@@ -106,12 +112,15 @@ a {
    ========================================================================== */
 
 :root {
+  /* Header */
   --primary-color: #a6adb6;
   --white-color: #ffffff;
   --blue-color: #4186fa;
   --font-11: 11px;
   --font-16: 16px;
   --font-16: 16px;
+  /* Facilities */
+  --title-forecolor: #2e3338;
 }
 
 body {
@@ -119,7 +128,6 @@ body {
   font-family: Vazir;
   color: var(--primary-color);
   line-height: 1;
-  box-sizing: border-box;
 }
 
 /* ------------------------------------------------ Header styles start  ------------------------------------------------ */
@@ -200,8 +208,63 @@ header .register {
 
 /* ------------------------------------------------ Header styles end  ------------------------------------------------ */
 
+/* ------------------------------------------------ Facilities section styles start  ------------------------------------------------ */
+.facilities h2 {
+  color: var(--title-forecolor);
+  margin-bottom: 10px;
+}
+
+.facilities .subtext {
+  display: inline-block;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.facilities .box {
+  width: 324px;
+  font-size: 14px;
+  padding: 40px 30px 29px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.facilities .box:hover {
+  box-shadow: 0 20px 40px 0 rgba(20, 40, 75, 0.06);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.facilities h3 {
+  color: var(--title-forecolor);
+  font-size: 14px;
+  margin-top: 19px;
+  margin-bottom: 10px;
+}
+
+.facilities p {
+  margin-bottom: 19px;
+  line-height: 1.57;
+}
+.more-link {
+  color: var(--blue-color);
+}
+
+.read-more {
+  width: 14px;
+  vertical-align: middle;
+  margin-right: 11px;
+}
+
+/* ------------------------------------------------ Facilities section styles end  ------------------------------------------------ */
+
 /* ==========================================================================
+*
+*
    Media Queries 
+*
+*  
    ========================================================================== */
 /* 375px is mobile device size */
 @media screen and (min-width: 768px) {
@@ -244,24 +307,35 @@ header .register {
   } */
 
   /* ------------------------------------------------ Header styles  end  ------------------------------------------------ */
+  /* ------------------------------------------------ Facilities section styles  end  ------------------------------------------------ */
+  .facilities .subtext {
+    margin-bottom: 50px;
+  }
+  .facilities .box {
+    padding: 40px;
+  }
+  .facilities p {
+    padding-left: 8px;
+  }
+  /* ------------------------------------------------ Facilities section styles  end  ------------------------------------------------ */
 }
 @media screen and (min-width: 1280px) {
   /* ------------------------------------------------ Grid system in this break point start  ------------------------------------------------ */
 
-  .col-xl-7 {
-    flex: 0 0 58.333333%;
+  .col-xl-4 {
+    flex: 0 0 33.333333%;
   }
 
   .col-xl-5 {
     flex: 0 0 41.333333%;
   }
 
-  /* .col-xl-8 {
-    width: 66.666666%;
+  .col-xl-7 {
+    flex: 0 0 58.333333%;
   }
 
-  .col-xl-4 {
-    width: 33.333333%;
+  /* .col-xl-8 {
+    width: 66.666666%;
   } */
 
   /* .col-xl-9 {
@@ -301,4 +375,35 @@ header .register {
   }
 
   /* ------------------------------------------------ Header styles  end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Facilities section styles  end  ------------------------------------------------ */
+  .facilities .subtext {
+    margin-bottom: 72px;
+  }
+  .facilities .box {
+    padding: 31px 16px;
+  }
+
+  .facilities .box {
+   order: 1;
+  }
+
+  .facilities .resume{
+    order: 2;
+  }
+
+  .facilities .webinar{
+    order: 3;
+  }
+
+  .facilities .online-class{
+    order: 4;
+  }
+
+  .facilities p {
+    padding-left: 30px;
+  }
+
+
+  /* ------------------------------------------------ Facilities section styles  end  ------------------------------------------------ */
 }

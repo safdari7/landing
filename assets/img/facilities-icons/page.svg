@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="66" viewBox="0 0 66 66">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#75eae8"/>
+      <stop offset="1" stop-color="#3ac1ce"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4186fa"/>
+      <stop offset="1" stop-color="#00b8ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_6606" data-name="Group 6606" transform="translate(-450.768 -154.668)">
+    <rect id="Rectangle_2179" data-name="Rectangle 2179" width="66" height="66" transform="translate(450.768 154.668)" fill="none"/>
+    <g id="Group_6605" data-name="Group 6605">
+      <path id="Path_4327" data-name="Path 4327" d="M508.87,182.339v24.935a2.5,2.5,0,0,1-2.5,2.5H495.995V179.838h10.374A2.5,2.5,0,0,1,508.87,182.339Z" fill="url(#linear-gradient)"/>
+      <path id="Path_4328" data-name="Path 4328" d="M471.541,179.838v29.937H461.167a2.5,2.5,0,0,1-2.5-2.5V182.339a2.5,2.5,0,0,1,2.5-2.5Z" fill="url(#linear-gradient)"/>
+      <g id="Group_6603" data-name="Group 6603">
+        <line id="Line_2280" data-name="Line 2280" x2="5.477" transform="translate(496.105 191.103)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.074"/>
+        <line id="Line_2281" data-name="Line 2281" x2="5.477" transform="translate(496.105 199.996)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.074"/>
+      </g>
+      <g id="Group_6604" data-name="Group 6604">
+        <line id="Line_2282" data-name="Line 2282" x2="5.477" transform="translate(466.025 191.103)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.074"/>
+        <line id="Line_2283" data-name="Line 2283" x2="5.477" transform="translate(466.025 199.996)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.074"/>
+      </g>
+      <path id="Path_4329" data-name="Path 4329" d="M495.995,167.669v42.106H471.541V167.669a2.5,2.5,0,0,1,2.5-2.5h19.452A2.5,2.5,0,0,1,495.995,167.669Z" fill="url(#linear-gradient-3)"/>
+      <line id="Line_2284" data-name="Line 2284" x2="9.115" transform="translate(479.21 176.209)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.074"/>
+      <line id="Line_2285" data-name="Line 2285" x2="9.115" transform="translate(479.21 183.656)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.074"/>
+      <line id="Line_2286" data-name="Line 2286" x2="9.115" transform="translate(479.21 191.103)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.074"/>
+      <path id="Rectangle_2180" data-name="Rectangle 2180" d="M1.706,0H6.149A1.706,1.706,0,0,1,7.855,1.706v8.466a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V1.706A1.706,1.706,0,0,1,1.706,0Z" transform="translate(479.796 199.996)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
