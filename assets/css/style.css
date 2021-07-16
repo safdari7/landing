@@ -2,68 +2,303 @@
    Add Vazir font to project
    ========================================================================== */
 
-   @font-face {
-    font-family: Vazir;
-    src: url("../fonts/Vazir-Regular.eot");
-    src: url("../fonts/Vazir-Regular.eot?#iefix") format("embedded-opentype"),
-      url("../fonts/Vazir-Regular.woff2") format("woff2"),
-      url("../fonts/Vazir-Regular.woff") format("woff"),
-      url("../fonts/Vazir-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Regular.eot");
+  src: url("../fonts/Vazir-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir-Regular.woff2") format("woff2"),
+    url("../fonts/Vazir-Regular.woff") format("woff"),
+    url("../fonts/Vazir-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Bold.eot");
+  src: url("../fonts/Vazir-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir-Bold.woff2") format("woff2"),
+    url("../fonts/Vazir-Bold.woff") format("woff"),
+    url("../fonts/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Black.eot");
+  src: url("../fonts/Vazir-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir-Black.woff2") format("woff2"),
+    url("../fonts/Vazir-Black.woff") format("woff"),
+    url("../fonts/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Medium.eot");
+  src: url("../fonts/Vazir-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir-Medium.woff2") format("woff2"),
+    url("../fonts/Vazir-Medium.woff") format("woff"),
+    url("../fonts/Vazir-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Light.eot");
+  src: url("../fonts/Vazir-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir-Light.woff2") format("woff2"),
+    url("../fonts/Vazir-Light.woff") format("woff"),
+    url("../fonts/Vazir-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Thin.eot");
+  src: url("../fonts/Vazir-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir-Thin.woff2") format("woff2"),
+    url("../fonts/Vazir-Thin.woff") format("woff"),
+    url("../fonts/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* ==========================================================================
+  CSS reset
+   ========================================================================== */
+
+* {
+  font-family: Vazir;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Grid System
+   ========================================================================== */
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* margin: 1%; */
+}
+
+.col-12 {
+  flex: 0 0 100%;
+}
+
+/* ==========================================================================
+   Main styles 
+   ========================================================================== */
+
+:root {
+  --primary-color: #a6adb6;
+  --white-color: #ffffff;
+  --blue-color: #4186fa;
+  --font-11: 11px;
+  --font-16: 16px;
+  --font-16: 16px;
+}
+
+body {
+  direction: rtl;
+  font-family: Vazir;
+  color: var(--primary-color);
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------ Header styles start  ------------------------------------------------ */
+/* Menu */
+
+.container {
+  padding: 25px 20px;
+}
+
+header {
+  background-image: linear-gradient(to bottom, #f3f6fa, #ffffff);
+}
+
+header .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+header button {
+  font-size: var(--font-11);
+  font-weight: 500;
+  border: none;
+  border-radius: 19px;
+}
+
+header .login {
+  background-color: var(--white-color);
+  color: var(--blue-color);
+  padding: 5px 24px;
+}
+
+header .register {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  padding: 5px 24px;
+  margin-left: 10px;
+  margin-bottom: -1px;
+}
+
+/* introduction */
+.header-image {
+  width: 100%;
+}
+.introduction {
+  text-align: center;
+  margin-top: 51.7px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.67;
+  color: #46515e;
+  margin-top: -145px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 2.06;
+  margin: 25px 0 51px;
+  font-weight: normal;
+}
+
+.primary-btn {
+  color: var(--white-color);
+  border-radius: 35px;
+  box-shadow: 0 6px 20px 0 rgba(65, 134, 250, 0.3);
+  background-color: var(--blue-color);
+}
+
+.btn-lg {
+  padding: 12px 60px 11px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 81.6px;
+}
+
+/* ------------------------------------------------ Header styles end  ------------------------------------------------ */
+
+/* ==========================================================================
+   Media Queries 
+   ========================================================================== */
+/* 375px is mobile device size */
+@media screen and (min-width: 768px) {
+  /* ------------------------------------------------ Grid system in this break point start  ------------------------------------------------ */
+
+  .col-md-6 {
+    flex: 0 0 50%;
   }
-  
-  @font-face {
-    font-family: Vazir;
-    src: url("../fonts/Vazir-Bold.eot");
-    src: url("../fonts/Vazir-Bold.eot?#iefix") format("embedded-opentype"),
-      url("../fonts/Vazir-Bold.woff2") format("woff2"),
-      url("../fonts/Vazir-Bold.woff") format("woff"),
-      url("../fonts/Vazir-Bold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
+
+  /* ------------------------------------------------ Grid system in this break point end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Header styles start  ------------------------------------------------ */
+
+  .container {
+    padding: 25px 30.5px 22px 29.5px;
   }
-  
-  @font-face {
-    font-family: Vazir;
-    src: url("../fonts/Vazir-Black.eot");
-    src: url("../fonts/Vazir-Black.eot?#iefix") format("embedded-opentype"),
-      url("../fonts/Vazir-Black.woff2") format("woff2"),
-      url("../fonts/Vazir-Black.woff") format("woff"),
-      url("../fonts/Vazir-Black.ttf") format("truetype");
-    font-weight: 900;
-    font-style: normal;
+
+  .image-container {
+    order: 2;
   }
-  
-  @font-face {
-    font-family: Vazir;
-    src: url("../fonts/Vazir-Medium.eot");
-    src: url("../fonts/Vazir-Medium.eot?#iefix") format("embedded-opentype"),
-      url("../fonts/Vazir-Medium.woff2") format("woff2"),
-      url("../fonts/Vazir-Medium.woff") format("woff"),
-      url("../fonts/Vazir-Medium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
+
+  .introduction {
+    align-items: center;
   }
-  
-  @font-face {
-    font-family: Vazir;
-    src: url("../fonts/Vazir-Light.eot");
-    src: url("../fonts/Vazir-Light.eot?#iefix") format("embedded-opentype"),
-      url("../fonts/Vazir-Light.woff2") format("woff2"),
-      url("../fonts/Vazir-Light.woff") format("woff"),
-      url("../fonts/Vazir-Light.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
+
+  .description-container {
+    text-align: right;
   }
-  
-  @font-face {
-    font-family: Vazir;
-    src: url("../fonts/Vazir-Thin.eot");
-    src: url("../fonts/Vazir-Thin.eot?#iefix") format("embedded-opentype"),
-      url("../fonts/Vazir-Thin.woff2") format("woff2"),
-      url("../fonts/Vazir-Thin.woff") format("woff"),
-      url("../fonts/Vazir-Thin.ttf") format("truetype");
-    font-weight: 100;
-    font-style: normal;
+
+  .description {
+    padding-left: 15px;
   }
+
+  .heading {
+    margin-top: -55px;
+  }
+
+  /* .header-image {
+    width: 90.5%;
+  } */
+
+  /* ------------------------------------------------ Header styles  end  ------------------------------------------------ */
+}
+@media screen and (min-width: 1280px) {
+  /* ------------------------------------------------ Grid system in this break point start  ------------------------------------------------ */
+
+  .col-xl-7 {
+    flex: 0 0 58.333333%;
+  }
+
+  .col-xl-5 {
+    flex: 0 0 41.333333%;
+  }
+
+  /* .col-xl-8 {
+    width: 66.666666%;
+  }
+
+  .col-xl-4 {
+    width: 33.333333%;
+  } */
+
+  /* .col-xl-9 {
+    flex: 0 0 75%;
+  }
+
+  .col-xl-3 {
+    flex: 0 0 25%;
+  } */
+
+  /* ------------------------------------------------ Grid system in this break point end  ------------------------------------------------ */
+  /* ------------------------------------------------ Header styles start  ------------------------------------------------ */
+
+  .container {
+    padding: 30px 137px 25px 130px;
+  }
+
+  .heading {
+    font-size: 36px;
+    margin-top: -125px;
+    line-height: 1.39;
+  }
+
+  .description {
+    font-size: 20px;
+    padding-left: 34px;
+    line-height: 1.85;
+    margin: 22px 0 47px;
+  }
+
+  .header-image {
+    /* width: 572px; */
+    /* width: 652px; */
+    /* width: 732px; */
+    height: 626px;
+    margin-left: -155px;
+  }
+
+  /* ------------------------------------------------ Header styles  end  ------------------------------------------------ */
+}
