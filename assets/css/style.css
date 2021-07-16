@@ -259,6 +259,66 @@ header .register {
 
 /* ------------------------------------------------ Facilities section styles end  ------------------------------------------------ */
 
+/* ------------------------------------------------ Audience styles start  ------------------------------------------------ */
+.audience {
+  padding: 23px 0 100px;
+}
+
+.audience .subtext {
+  color: var(--primary-color);
+  font-size: 16px;
+}
+.audience .title {
+  color: #4a515a;
+  font-size: 25px;
+  margin-top: 8.3px;
+  margin-bottom: 23px;
+  padding: 10px 0;
+}
+
+.audience h3 {
+  color: #4a515a;
+  margin-top: -12px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.swiper-container img {
+  width: 270px;
+}
+
+.swiper-container p {
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.swiper-slide {
+  width: 100%;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -3px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #4186fa;
+}
+
+.swiper-pagination-bullet-active {
+  box-shadow: 0 3px 10px 0 rgba(65, 134, 250, 0.3);
+}
+
+/* ------------------------------------------------ Audience section styles end  ------------------------------------------------ */
+
 /* ==========================================================================
 *
 *
@@ -307,7 +367,7 @@ header .register {
   } */
 
   /* ------------------------------------------------ Header styles  end  ------------------------------------------------ */
-  /* ------------------------------------------------ Facilities section styles  end  ------------------------------------------------ */
+  /* ------------------------------------------------ Facilities section styles  start  ------------------------------------------------ */
   .facilities .subtext {
     margin-bottom: 50px;
   }
@@ -318,6 +378,49 @@ header .register {
     padding-left: 8px;
   }
   /* ------------------------------------------------ Facilities section styles  end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Audience section styles  end  ------------------------------------------------ */
+  .audience {
+    padding: 70px 0 137px;
+  }
+
+  .audience .subtext {
+    font-size: 20px;
+  }
+  .audience .title {
+    font-size: 30px;
+    margin-bottom: 98px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .audience h3 {
+    margin-top: 0;
+    margin-top: 15px;
+  }
+
+  .swiper-container img {
+    width: 342px;
+    /* margin-left: 36px; */
+    margin-left: 26px;
+    margin-top: -21px;
+  }
+
+  .text-wrapper {
+    text-align: right;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    padding-right: 160px;
+  }
+
+  /* ------------------------------------------------ Audience section styles  end  ------------------------------------------------ */
 }
 @media screen and (min-width: 1280px) {
   /* ------------------------------------------------ Grid system in this break point start  ------------------------------------------------ */
@@ -385,18 +488,18 @@ header .register {
   }
 
   .facilities .box {
-   order: 1;
+    order: 1;
   }
 
-  .facilities .resume{
+  .facilities .resume {
     order: 2;
   }
 
-  .facilities .webinar{
+  .facilities .webinar {
     order: 3;
   }
 
-  .facilities .online-class{
+  .facilities .online-class {
     order: 4;
   }
 
@@ -404,6 +507,27 @@ header .register {
     padding-left: 30px;
   }
 
-
   /* ------------------------------------------------ Facilities section styles  end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Audience section styles  start  ------------------------------------------------ */
+
+  .audience {
+    padding: 70px 0 186px;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    padding-right: 0;
+    padding-left: 90px;
+  }
+
+  .swiper-container img {
+    width: 375px;
+  }
+
+  .text-wrapper p {
+    padding-left: 180px;
+  }
+  /* ------------------------------------------------ Audience section styles  end  ------------------------------------------------ */
 }
