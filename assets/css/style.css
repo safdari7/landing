@@ -107,6 +107,10 @@ a {
   flex: 0 0 100%;
 }
 
+.d-none {
+  display: none;
+}
+
 /* ==========================================================================
    Main styles 
    ========================================================================== */
@@ -306,13 +310,13 @@ header .register {
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: -3px;
+  bottom: 0;
 }
 
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background-color: #4186fa;
+  background-color: var(--blue-color);
 }
 
 .swiper-pagination-bullet-active {
@@ -358,12 +362,69 @@ header .register {
 
 .scrolling-wrapper-flexbox .box:hover {
   box-shadow: 5px 17px 20px 0 rgba(65, 134, 250, 0.3);
-  background-color: #4186fa;
+  background-color: var(--blue-color);
   top: -10px;
   color: var(--white-color);
 }
 
 /* ------------------------------------------------ Categories section styles end  ------------------------------------------------ */
+
+/* ------------------------------------------------ Members section styles start  ------------------------------------------------ */
+.members {
+  padding: 0 20.5px 105px;
+  margin-top: -15px;
+}
+
+.members .title {
+  color: var(--title-forecolor);
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: -37px;
+}
+
+.members .sub-title {
+  font-size: 14px;
+}
+
+.members .info {
+  color: var(--title-forecolor);
+}
+
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin-left: 12px;
+}
+
+.members .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  padding: 4px;
+  position: relative;
+}
+
+.members .swiper-pagination-bullet-active {
+  background-color: var(--blue-color);
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+}
+
+.members .swiper-pagination-bullet-active:after {
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--blue-color);
+  background-color: transparent;
+  padding: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  z-index: 99;
+  content: "";
+}
+
+/* ------------------------------------------------ Members section styles end  ------------------------------------------------ */
 
 /* ==========================================================================
 *
@@ -378,6 +439,10 @@ header .register {
 
   .col-md-6 {
     flex: 0 0 50%;
+  }
+
+  .col-md-block {
+    display: block;
   }
 
   /* ------------------------------------------------ Grid system in this break point end  ------------------------------------------------ */
@@ -451,7 +516,6 @@ header .register {
 
   .swiper-container img {
     width: 342px;
-    /* margin-left: 36px; */
     margin-left: 26px;
     margin-top: -21px;
   }
@@ -479,6 +543,109 @@ header .register {
   }
 
   /* ------------------------------------------------ Categories section styles end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Members section styles start  ------------------------------------------------ */
+  .members {
+    padding: 0 20.5px 91px;
+    margin-top: -15px;
+  }
+
+  .members .title {
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  .members .sub-title {
+    font-size: 12px;
+  }
+
+  .members .info {
+    padding-left: 100px;
+  }
+
+  .members .comment-title {
+    color: var(--title-forecolor);
+    font-size: 30px;
+    margin-bottom: 3px;
+  }
+  .members .comment-container {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 76px;
+  }
+
+  .members .swiper-container {
+    max-width: 680px;
+  }
+
+  .members .audience-Swiper {
+    padding: 48px 20px 49px 57px;
+    box-shadow: 0 15px 30px 0 rgba(20, 40, 75, 0.06);
+    border-radius: 20px;
+  }
+
+  .members .swiper-container img {
+    width: 203px;
+  }
+  .members .swiper-container img {
+    margin-top: -30px;
+  }
+  .members .swiper-button-next,
+  .members .swiper-button-prev {
+    padding: 6px 8px 8px 6px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    width: 46px;
+    height: 47px;
+    border-radius: 50%;
+  }
+
+  .members .swiper-button-next img,
+  .members .swiper-button-prev img {
+    width: 24px;
+    margin: 0 auto;
+  }
+
+  .members .swiper-button-next:after,
+  .members .swiper-button-prev:after {
+    display: none;
+  }
+
+  .prev {
+    transform: rotate(180deg);
+  }
+
+  .members .swiper-button-prev {
+    right: -23px;
+    left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .members .swiper-button-next {
+    left: -23px;
+    right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .members .swiper-container-horizontal > .swiper-pagination-bullets,
+  .members .swiper-pagination-custom,
+  .members .swiper-pagination-fraction {
+    padding-right: 0;
+    position: relative;
+    right: -190px;
+    top: -118px;
+  }
+
+  .members .overflow-show {
+    overflow: initial;
+    position: relative;
+    bottom: 188px;
+  }
+  /* ------------------------------------------------ Members section styles end  ------------------------------------------------ */
 }
 @media screen and (min-width: 1280px) {
   /* ------------------------------------------------ Grid system in this break point start  ------------------------------------------------ */
@@ -602,4 +769,38 @@ header .register {
     margin: 0 9.4px 25.5px;
   }
   /* ------------------------------------------------ Categories section styles end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Members section styles start  ------------------------------------------------ */
+  .members .title {
+    font-size: 20px;
+  }
+
+  .members .sub-title {
+    font-size: 14px;
+  }
+
+  .members .info {
+    padding-left: 0;
+  }
+
+  .members .swiper-slide .user-image {
+    width: 218px;
+  }
+
+  .swiper-container p {
+    margin-top: 30px;
+  }
+
+  .members .audience-Swiper {
+    padding: 50px 60px;
+  }
+
+  .members .swiper-container-horizontal > .swiper-pagination-bullets,
+  .members .swiper-pagination-custom,
+  .members .swiper-pagination-fraction {
+    right: -23%;
+    top: -80px;
+  }
+
+  /* ------------------------------------------------ Members section styles end  ------------------------------------------------ */
 }
