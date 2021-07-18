@@ -141,6 +141,8 @@ body {
 
 .container {
   padding: 25px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 header {
@@ -540,6 +542,72 @@ header .register {
 
 /* ------------------------------------------------ Download App section styles end  ------------------------------------------------ */
 
+/* ------------------------------------------------ Create profile section styles start  ------------------------------------------------ */
+.create-profile {
+  padding: 51px 0 71px;
+}
+
+.create-profile .wrapper {
+  text-align: center;
+  box-shadow: 0 0 15px 10px #ffffff;
+  margin: 0 auto;
+}
+
+.create-profile .img-container {
+  margin: 0 auto;
+  height: 384px;
+  overflow: hidden;
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+.create-profile .create-profile-image {
+  max-width: 70%;
+  height: fit-content;
+}
+
+.create-profile .title {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--title-forecolor);
+  padding-top: 30px;
+}
+
+.create-profile .text {
+  font-size: 12px;
+  line-height: 2.25;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 40px;
+  max-width: 378px;
+}
+
+.create-profile .register-btn {
+  margin: 0 auto;
+  margin-bottom: 31px;
+  padding: 12px 80px 11px;
+  border-radius: 35px;
+  box-shadow: 0 6px 20px 0 rgba(65, 134, 250, 0.3);
+  background-color: var(--blue-color);
+  border: none;
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.create-profile .question {
+  color: var(--title-forecolor);
+  font-size: 16px;
+  margin-left: 22px;
+}
+
+.create-profile .login {
+  color: var(--blue-color);
+}
+
+/* ------------------------------------------------ Create profile  section styles end  ------------------------------------------------ */
+
 /* ==========================================================================
 *
 *
@@ -787,6 +855,37 @@ header .register {
   }
 
   /* ------------------------------------------------ Download App section styles end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Create profile section styles start  ------------------------------------------------ */
+
+  .create-profile {
+    padding-top: 65px;
+  }
+
+  .create-profile .container {
+    padding-bottom: 0;
+  }
+
+  .create-profile .img-container {
+    height: 373px;
+    order: 2;
+    flex: 0 0 45%;
+  }
+
+  .create-profile .title {
+    font-size: 30px;
+  }
+
+  .create-profile .text {
+    font-size: 14px;
+    line-height: 1.93;
+  }
+
+  .create-profile .wrapper {
+    flex: 0 0 55%;
+  }
+
+  /* ------------------------------------------------ Create profile  section styles end  ------------------------------------------------ */
 }
 @media screen and (min-width: 1280px) {
   /* ------------------------------------------------ Grid system in this break point start  ------------------------------------------------ */
@@ -950,4 +1049,30 @@ header .register {
     padding-right: 137px;
   }
   /* ------------------------------------------------ Download App section styles end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Create profile section styles start  ------------------------------------------------ */
+  .create-profile {
+    padding-top: 100px;
+  }
+
+  .create-profile .container {
+    padding-bottom: 22px;
+  }
+
+  .create-profile .img-container {
+    height: 373px;
+  }
+  .create-profile .img-container .create-profile-image{
+    width: 100%;
+  }
+
+  .create-profile .wrapper {
+    flex: 0 0 54%;
+  }
+
+  .create-profile .img-container {
+    flex: 0 0 46%;
+    height: 530px;
+  }
+  /* ------------------------------------------------ Create profile  section styles end  ------------------------------------------------ */
 }
