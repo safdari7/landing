@@ -100,7 +100,6 @@ a {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  /* margin: 1%; */
 }
 
 .col-12 {
@@ -608,6 +607,111 @@ header .register {
 
 /* ------------------------------------------------ Create profile  section styles end  ------------------------------------------------ */
 
+/* ------------------------------------------------ Footer section styles start  ------------------------------------------------ */
+
+footer {
+  background-color: #192734;
+}
+
+footer .list-container {
+  text-align: center;
+}
+
+footer .title {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid #46515e;
+}
+
+footer {
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer .title.active {
+  background-color: #15212d;
+}
+
+footer .title.active {
+  background-color: #15212d;
+}
+
+footer .title.active ~ ul {
+  display: block;
+}
+
+footer .list {
+  border-bottom: 1px solid #46515e;
+  padding: 20px 0;
+  display: none;
+}
+
+footer .list li a {
+  color: var(--primary-color);
+  font-weight: normal;
+  color: var(--primary-color);
+  line-height: 2.86;
+}
+
+footer .at-sign {
+  vertical-align: middle;
+}
+
+footer .copy-right {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1.67;
+  text-align: center;
+  padding: 0px 60px 9px;
+}
+
+footer .copy-right .bolder {
+  font-weight: 500;
+}
+
+.blue-line {
+  background-color: var(--blue-color);
+  height: 5px;
+}
+
+footer .icons-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20.7px;
+}
+
+footer .icon {
+  margin-left: 8.1px;
+}
+
+footer .profile {
+  width: 24px;
+  height: 24px;
+  align-self: center;
+  background-color: #162d40;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .logo-wrapper {
+  text-align: center;
+  margin: 50px 0 30px;
+}
+
+footer .address {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 2.08;
+  color: #f2f3f5;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* ------------------------------------------------ Footer section styles end  ------------------------------------------------ */
+
 /* ==========================================================================
 *
 *
@@ -619,8 +723,22 @@ header .register {
 @media screen and (min-width: 768px) {
   /* ------------------------------------------------ Grid system in this break point start  ------------------------------------------------ */
 
+  .d-md-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .col-md-5 {
+    flex: 0 0 41.666666%;
+  }
+
   .col-md-6 {
     flex: 0 0 50%;
+  }
+
+  .col-md-7 {
+    flex: 0 0 58.333333%;
   }
 
   .col-md-block {
@@ -654,10 +772,6 @@ header .register {
   .heading {
     margin-top: -55px;
   }
-
-  /* .header-image {
-    width: 90.5%;
-  } */
 
   /* ------------------------------------------------ Header styles  end  ------------------------------------------------ */
   /* ------------------------------------------------ Facilities section styles  start  ------------------------------------------------ */
@@ -886,9 +1000,59 @@ header .register {
   }
 
   /* ------------------------------------------------ Create profile  section styles end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Footer section styles start  ------------------------------------------------ */
+  footer {
+    padding: 79px 96px 0 100px;
+  }
+
+  footer .list-container {
+    text-align: right;
+    margin-bottom: 80px;
+  }
+
+  footer .title,
+  footer .list {
+    border-bottom: none;
+  }
+
+  footer .title.active {
+    background-color: unset;
+  }
+
+  footer .list-container .list {
+    display: block;
+  }
+
+  footer .title {
+    padding-top: 0;
+    padding-bottom: 0px;
+  }
+
+  footer .logo-wrapper {
+    margin-top: 0;
+  }
+
+  footer .list {
+    padding: 13px 0 0;
+  }
+
+  footer .address {
+    max-width: 153px;
+    margin: 0 auto;
+  }
+
+  footer .ml-md-1 {
+    margin-left: -10px;
+  }
+  /* ------------------------------------------------ Footer section styles end  ------------------------------------------------ */
 }
 @media screen and (min-width: 1280px) {
   /* ------------------------------------------------ Grid system in this break point start  ------------------------------------------------ */
+
+  .col-xl-3 {
+    flex: 0 0 25%;
+  }
 
   .col-xl-4 {
     flex: 0 0 33.333333%;
@@ -902,17 +1066,13 @@ header .register {
     flex: 0 0 58.333333%;
   }
 
-  /* .col-xl-8 {
+  .col-xl-8 {
     width: 66.666666%;
-  } */
-
-  /* .col-xl-9 {
-    flex: 0 0 75%;
   }
 
-  .col-xl-3 {
-    flex: 0 0 25%;
-  } */
+  .col-xl-9 {
+    flex: 0 0 75%;
+  }
 
   /* ------------------------------------------------ Grid system in this break point end  ------------------------------------------------ */
   /* ------------------------------------------------ Header styles start  ------------------------------------------------ */
@@ -935,9 +1095,6 @@ header .register {
   }
 
   .header-image {
-    /* width: 572px; */
-    /* width: 652px; */
-    /* width: 732px; */
     height: 626px;
     margin-left: -155px;
   }
@@ -1053,6 +1210,7 @@ header .register {
   /* ------------------------------------------------ Create profile section styles start  ------------------------------------------------ */
   .create-profile {
     padding-top: 100px;
+    padding-bottom: 0;
   }
 
   .create-profile .container {
@@ -1062,7 +1220,7 @@ header .register {
   .create-profile .img-container {
     height: 373px;
   }
-  .create-profile .img-container .create-profile-image{
+  .create-profile .img-container .create-profile-image {
     width: 100%;
   }
 
@@ -1075,4 +1233,20 @@ header .register {
     height: 530px;
   }
   /* ------------------------------------------------ Create profile  section styles end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Footer section styles start  ------------------------------------------------ */
+
+  footer {
+    padding: 81px 138px 0 223px;
+  }
+
+  footer .copy-right {
+    padding-bottom: 25px;
+  }
+
+  footer .mr-xl-4 {
+    margin-right: 42px;
+  }
+
+  /* ------------------------------------------------ Footer section styles end  ------------------------------------------------ */
 }
