@@ -377,6 +377,7 @@ header .register {
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   overflow-x: auto;
+  scrollbar-width: none;
 }
 
 .scrolling-wrapper-flexbox::-webkit-scrollbar {
