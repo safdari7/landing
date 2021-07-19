@@ -1,0 +1,1397 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* ==========================================================================
+   Add Vazir font to project
+   ========================================================================== */
+
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Regular.eot");
+  src: url("../fonts/Vazir-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir-Regular.woff2") format("woff2"),
+    url("../fonts/Vazir-Regular.woff") format("woff"),
+    url("../fonts/Vazir-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Bold.eot");
+  src: url("../fonts/Vazir-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir-Bold.woff2") format("woff2"),
+    url("../fonts/Vazir-Bold.woff") format("woff"),
+    url("../fonts/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Black.eot");
+  src: url("../fonts/Vazir-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir-Black.woff2") format("woff2"),
+    url("../fonts/Vazir-Black.woff") format("woff"),
+    url("../fonts/Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Medium.eot");
+  src: url("../fonts/Vazir-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir-Medium.woff2") format("woff2"),
+    url("../fonts/Vazir-Medium.woff") format("woff"),
+    url("../fonts/Vazir-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Light.eot");
+  src: url("../fonts/Vazir-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir-Light.woff2") format("woff2"),
+    url("../fonts/Vazir-Light.woff") format("woff"),
+    url("../fonts/Vazir-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Thin.eot");
+  src: url("../fonts/Vazir-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir-Thin.woff2") format("woff2"),
+    url("../fonts/Vazir-Thin.woff") format("woff"),
+    url("../fonts/Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* ==========================================================================
+    CSS reset
+     ========================================================================== */
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: Vazir;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+     Grid System
+     ========================================================================== */
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.col-12 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.d-none {
+  display: none;
+}
+
+/* ==========================================================================
+     Main styles 
+     ========================================================================== */
+
+:root {
+  /* Header */
+  --primary-color: #a6adb6;
+  --white-color: #ffffff;
+  --blue-color: #4186fa;
+  --font-11: 11px;
+  --font-16: 16px;
+  --font-16: 16px;
+  /* Facilities */
+  --title-forecolor: #2e3338;
+  /* categories */
+  --bg-secondary: #f4f6fa;
+}
+
+body {
+  direction: rtl;
+  font-family: Vazir;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+/* ------------------------------------------------ Header styles start  ------------------------------------------------ */
+/* Menu */
+
+.container {
+  padding: 25px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f3f6fa),
+    to(#ffffff)
+  );
+  background-image: -o-linear-gradient(top, #f3f6fa, #ffffff);
+  background-image: linear-gradient(to bottom, #f3f6fa, #ffffff);
+}
+
+header .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+header button {
+  font-size: var(--font-11);
+  font-weight: 500;
+  border: none;
+  border-radius: 19px;
+}
+
+header .login {
+  background-color: var(--white-color);
+  color: var(--blue-color);
+  padding: 5px 24px;
+}
+
+header .register {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  padding: 5px 24px;
+  margin-left: 10px;
+  margin-bottom: -1px;
+}
+
+/* introduction */
+.header-image {
+  width: 100%;
+}
+.introduction {
+  text-align: center;
+  margin-top: 51.7px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.67;
+  color: #46515e;
+  margin-top: -145px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 2.06;
+  margin: 25px 0 51px;
+  font-weight: normal;
+}
+
+.primary-btn {
+  color: var(--white-color);
+  border-radius: 35px;
+  -webkit-box-shadow: 0 6px 20px 0 rgba(65, 134, 250, 0.3);
+  box-shadow: 0 6px 20px 0 rgba(65, 134, 250, 0.3);
+  background-color: var(--blue-color);
+}
+
+.btn-lg {
+  padding: 12px 60px 11px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 81.6px;
+}
+
+/* ------------------------------------------------ Header styles end  ------------------------------------------------ */
+
+/* ------------------------------------------------ Facilities section styles start  ------------------------------------------------ */
+.facilities h2 {
+  color: var(--title-forecolor);
+  margin-bottom: 10px;
+}
+
+.facilities .subtext {
+  display: inline-block;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.facilities .box {
+  width: 324px;
+  font-size: 14px;
+  padding: 40px 30px 29px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.facilities .box:hover {
+  -webkit-box-shadow: 0 20px 40px 0 rgba(20, 40, 75, 0.06);
+  box-shadow: 0 20px 40px 0 rgba(20, 40, 75, 0.06);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.facilities h3 {
+  color: var(--title-forecolor);
+  font-size: 14px;
+  margin-top: 19px;
+  margin-bottom: 10px;
+}
+
+.facilities p {
+  margin-bottom: 19px;
+  line-height: 1.57;
+}
+.more-link {
+  color: var(--blue-color);
+}
+
+.read-more {
+  width: 14px;
+  vertical-align: middle;
+  margin-right: 11px;
+}
+
+/* ------------------------------------------------ Facilities section styles end  ------------------------------------------------ */
+
+/* ------------------------------------------------ Audience styles start  ------------------------------------------------ */
+.audience {
+  padding: 23px 0 100px;
+}
+
+.audience .subtext {
+  color: var(--primary-color);
+  font-size: 16px;
+}
+.audience .title {
+  color: #4a515a;
+  font-size: 25px;
+  margin-top: 8.3px;
+  margin-bottom: 23px;
+  padding: 10px 0;
+}
+
+.audience h3 {
+  color: #4a515a;
+  margin-top: -12px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.swiper-container img {
+  width: 270px;
+}
+
+.swiper-container p {
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.swiper-slide {
+  width: 100%;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: var(--blue-color);
+}
+
+.swiper-pagination-bullet-active {
+  -webkit-box-shadow: 0 3px 10px 0 rgba(65, 134, 250, 0.3);
+  box-shadow: 0 3px 10px 0 rgba(65, 134, 250, 0.3);
+}
+
+/* ------------------------------------------------ Audience section styles end  ------------------------------------------------ */
+
+/* ------------------------------------------------ Categories section styles start  ------------------------------------------------ */
+.categories {
+  background-color: var(--bg-secondary);
+  padding: 68.5px 0 62.7px;
+  text-align: center;
+}
+
+.categories h2 {
+  color: var(--title-forecolor);
+  margin: 0 20px 59px;
+}
+
+.scrolling-wrapper-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.scrolling-wrapper-flexbox::-webkit-scrollbar {
+  display: none;
+}
+
+.scrolling-wrapper-flexbox .box {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding: 7px 29px 9px 26px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+  margin: 0 5px 20px;
+  color: inherit;
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 0.5s;
+  -o-transition: top ease 0.5s;
+  transition: top ease 0.5s;
+}
+
+.scrolling-wrapper-flexbox .box:hover {
+  -webkit-box-shadow: 5px 17px 20px 0 rgba(65, 134, 250, 0.3);
+  box-shadow: 5px 17px 20px 0 rgba(65, 134, 250, 0.3);
+  background-color: var(--blue-color);
+  top: -10px;
+  color: var(--white-color);
+}
+
+/* ------------------------------------------------ Categories section styles end  ------------------------------------------------ */
+
+/* ------------------------------------------------ Members section styles start  ------------------------------------------------ */
+.members {
+  padding: 0 20.5px 105px;
+  margin-top: -15px;
+}
+
+.members .title {
+  color: var(--title-forecolor);
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: -37px;
+}
+
+.members .sub-title {
+  font-size: 14px;
+}
+
+.members .info {
+  color: var(--title-forecolor);
+}
+
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin-left: 12px;
+}
+
+.members .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  padding: 4px;
+  position: relative;
+}
+
+.members .swiper-pagination-bullet-active {
+  background-color: var(--blue-color);
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+}
+
+.members .swiper-pagination-bullet-active:after {
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--blue-color);
+  background-color: transparent;
+  padding: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  z-index: 99;
+  content: "";
+}
+
+/* ------------------------------------------------ Members section styles end  ------------------------------------------------ */
+
+/* ------------------------------------------------ Download App section styles start  ------------------------------------------------ */
+
+.download-app {
+  background-color: var(--bg-secondary);
+  padding: 66px 0 80px;
+}
+
+.download-app .title {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--title-forecolor);
+  line-height: normal;
+  margin-bottom: 14px;
+}
+
+.download-app .date {
+  margin-bottom: 32px;
+  margin-top: 10px;
+}
+
+.download-app .info {
+  margin-top: -380px;
+  margin-right: 30px;
+}
+
+.download-app .time-icon {
+  width: 16px;
+  margin-right: -4px;
+  margin-left: 17px;
+  vertical-align: middle;
+}
+
+.download-app .text-blue {
+  color: var(--blue-color);
+  font-size: 15px;
+  margin-left: 18px;
+}
+
+.download-app .container {
+  padding-bottom: 0;
+  padding-right: 0;
+}
+
+.download-app .download-btn {
+  margin-bottom: 56px;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: var(--blue-color);
+  padding: 7px;
+  border-radius: 26px;
+  -webkit-box-shadow: 0 2px 15px 0 rgba(70, 81, 94, 0.3);
+  box-shadow: 0 2px 15px 0 rgba(70, 81, 94, 0.3);
+  width: 209px;
+  border: none;
+  color: var(--white-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.download-app .download-btn span {
+  margin: 0 auto;
+}
+
+.download-app .download-btn .down-arrow-parent {
+  width: 34px;
+  height: 34px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 0;
+  position: absolute;
+  right: 5px;
+}
+
+.download-app .download-btn .down-arrow {
+  width: 21px;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.download-app .list {
+  line-height: 1.8;
+}
+
+.download-app .text {
+  color: #4a515a;
+}
+
+.download-app .list .dash {
+  display: inline-block;
+  width: 6.6px;
+  height: 2px;
+  background-color: var(--blue-color);
+  margin-left: 22px;
+}
+
+.download-app .list-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--title-forecolor);
+}
+
+.download-app .img-container {
+  margin: 0 auto;
+}
+
+.download-app .download-app-image {
+  width: 100%;
+}
+
+/* ------------------------------------------------ Download App section styles end  ------------------------------------------------ */
+
+/* ------------------------------------------------ Create profile section styles start  ------------------------------------------------ */
+.create-profile {
+  padding: 51px 0 71px;
+}
+
+.create-profile .wrapper {
+  text-align: center;
+  -webkit-box-shadow: 0 0 15px 10px #ffffff;
+  box-shadow: 0 0 15px 10px #ffffff;
+  margin: 0 auto;
+}
+
+.create-profile .img-container {
+  margin: 0 auto;
+  height: 384px;
+  overflow: hidden;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+.create-profile .create-profile-image {
+  max-width: 70%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.create-profile .title {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--title-forecolor);
+  padding-top: 30px;
+}
+
+.create-profile .text {
+  font-size: 12px;
+  line-height: 2.25;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 40px;
+  max-width: 378px;
+}
+
+.create-profile .register-btn {
+  margin: 0 auto;
+  margin-bottom: 31px;
+  padding: 12px 80px 11px;
+  border-radius: 35px;
+  -webkit-box-shadow: 0 6px 20px 0 rgba(65, 134, 250, 0.3);
+  box-shadow: 0 6px 20px 0 rgba(65, 134, 250, 0.3);
+  background-color: var(--blue-color);
+  border: none;
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.create-profile .question {
+  color: var(--title-forecolor);
+  font-size: 16px;
+  margin-left: 22px;
+}
+
+.create-profile .login {
+  color: var(--blue-color);
+}
+
+/* ------------------------------------------------ Create profile  section styles end  ------------------------------------------------ */
+
+/* ------------------------------------------------ Footer section styles start  ------------------------------------------------ */
+
+footer {
+  background-color: #192734;
+}
+
+footer .list-container {
+  text-align: center;
+}
+
+footer .title {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid #46515e;
+}
+
+footer {
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer .title.active {
+  background-color: #15212d;
+}
+
+footer .title.active {
+  background-color: #15212d;
+}
+
+footer .title.active ~ ul {
+  display: block;
+}
+
+footer .list {
+  border-bottom: 1px solid #46515e;
+  padding: 20px 0;
+  display: none;
+}
+
+footer .list li a {
+  color: var(--primary-color);
+  font-weight: normal;
+  color: var(--primary-color);
+  line-height: 2.86;
+}
+
+footer .at-sign {
+  vertical-align: middle;
+}
+
+footer .copy-right {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1.67;
+  text-align: center;
+  padding: 0px 60px 9px;
+}
+
+footer .copy-right .bolder {
+  font-weight: 500;
+}
+
+.blue-line {
+  background-color: var(--blue-color);
+  height: 5px;
+}
+
+footer .icons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 20.7px;
+}
+
+footer .icon {
+  margin-left: 8.1px;
+}
+
+footer .profile {
+  width: 24px;
+  height: 24px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background-color: #162d40;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer .logo-wrapper {
+  text-align: center;
+  margin: 50px 0 30px;
+}
+
+footer .address {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 2.08;
+  color: #f2f3f5;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* ------------------------------------------------ Footer section styles end  ------------------------------------------------ */
+
+/* ==========================================================================
+  *
+  *
+     Media Queries 
+  *
+  *  
+     ========================================================================== */
+/* 375px is mobile device size */
+@media screen and (min-width: 768px) {
+  /* ------------------------------------------------ Grid system in this break point start  ------------------------------------------------ */
+
+  .d-md-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .col-md-5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 41.666666%;
+    flex: 0 0 41.666666%;
+  }
+
+  .col-md-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+
+  .col-md-7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+  }
+
+  .col-md-block {
+    display: block;
+  }
+
+  /* ------------------------------------------------ Grid system in this break point end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Header styles start  ------------------------------------------------ */
+
+  .container {
+    padding: 25px 30.5px 22px 29.5px;
+  }
+
+  .image-container {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .introduction {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .description-container {
+    text-align: right;
+  }
+
+  .description {
+    padding-left: 15px;
+  }
+
+  .heading {
+    margin-top: -55px;
+  }
+
+  /* ------------------------------------------------ Header styles  end  ------------------------------------------------ */
+  /* ------------------------------------------------ Facilities section styles  start  ------------------------------------------------ */
+  .facilities .subtext {
+    margin-bottom: 50px;
+  }
+  .facilities .box {
+    padding: 40px;
+  }
+  .facilities p {
+    padding-left: 8px;
+  }
+  /* ------------------------------------------------ Facilities section styles  end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Audience section styles  end  ------------------------------------------------ */
+  .audience {
+    padding: 70px 0 137px;
+  }
+
+  .audience .subtext {
+    font-size: 20px;
+  }
+  .audience .title {
+    font-size: 30px;
+    margin-bottom: 98px;
+  }
+
+  .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .audience h3 {
+    margin-top: 0;
+    margin-top: 15px;
+  }
+
+  .swiper-container img {
+    width: 342px;
+    margin-left: 26px;
+    margin-top: -21px;
+  }
+
+  .text-wrapper {
+    text-align: right;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    padding-right: 160px;
+  }
+
+  /* ------------------------------------------------ Audience section styles  end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Categories section styles start  ------------------------------------------------ */
+  .categories {
+    padding: 100px 0 191.6px;
+  }
+
+  .scrolling-wrapper-flexbox .box {
+    -webkit-box-shadow: 0 1px 10px 0 rgba(0, 75, 251, 0.11);
+    box-shadow: 0 1px 10px 0 rgba(0, 75, 251, 0.11);
+    margin: 0 7px 25.5px;
+  }
+
+  /* ------------------------------------------------ Categories section styles end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Members section styles start  ------------------------------------------------ */
+  .members {
+    padding: 0 20.5px 91px;
+    margin-top: -15px;
+  }
+
+  .members .title {
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  .members .sub-title {
+    font-size: 12px;
+  }
+
+  .members .info {
+    padding-left: 100px;
+  }
+
+  .members .comment-title {
+    color: var(--title-forecolor);
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  .members .comment-container {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 76px;
+  }
+
+  .members .swiper-container {
+    max-width: 680px;
+  }
+
+  .members .audience-Swiper {
+    padding: 48px 20px 49px 57px;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(20, 40, 75, 0.06);
+    box-shadow: 0 15px 30px 0 rgba(20, 40, 75, 0.06);
+    border-radius: 20px;
+  }
+
+  .members .swiper-container img {
+    width: 203px;
+  }
+  .members .swiper-container img {
+    margin-top: -30px;
+  }
+  .members .swiper-button-next,
+  .members .swiper-button-prev {
+    padding: 6px 8px 8px 6px;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    width: 46px;
+    height: 47px;
+    border-radius: 50%;
+  }
+
+  .members .swiper-button-next img,
+  .members .swiper-button-prev img {
+    width: 24px;
+    margin: 0 auto;
+  }
+
+  .members .swiper-button-next:after,
+  .members .swiper-button-prev:after {
+    display: none;
+  }
+
+  .prev {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .members .swiper-button-prev {
+    right: -23px;
+    left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .members .swiper-button-next {
+    left: -23px;
+    right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .members .swiper-container-horizontal > .swiper-pagination-bullets,
+  .members .swiper-pagination-custom,
+  .members .swiper-pagination-fraction {
+    padding-right: 0;
+    position: relative;
+    right: -190px;
+    top: -118px;
+  }
+
+  .members .overflow-show {
+    overflow: initial;
+    position: relative;
+    bottom: 188px;
+  }
+  /* ------------------------------------------------ Members section styles end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Download App section styles start  ------------------------------------------------ */
+
+  .download-app {
+    padding-top: 76px;
+    padding-bottom: 0;
+  }
+
+  .download-app .title {
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  .download-app .info {
+    margin-top: 0;
+    margin-right: 31px;
+  }
+
+  .download-app .img-container {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    height: 574px;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 410px;
+  }
+
+  /* ------------------------------------------------ Download App section styles end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Create profile section styles start  ------------------------------------------------ */
+
+  .create-profile {
+    padding-top: 65px;
+  }
+
+  .create-profile .container {
+    padding-bottom: 0;
+  }
+
+  .create-profile .img-container {
+    height: 373px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+  }
+
+  .create-profile .title {
+    font-size: 30px;
+  }
+
+  .create-profile .text {
+    font-size: 14px;
+    line-height: 1.93;
+  }
+
+  .create-profile .wrapper {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 55%;
+    flex: 0 0 55%;
+  }
+
+  /* ------------------------------------------------ Create profile  section styles end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Footer section styles start  ------------------------------------------------ */
+  footer {
+    padding: 79px 96px 0 100px;
+  }
+
+  footer .list-container {
+    text-align: right;
+    margin-bottom: 80px;
+  }
+
+  footer .title,
+  footer .list {
+    border-bottom: none;
+  }
+
+  footer .title.active {
+    background-color: unset;
+  }
+
+  footer .list-container .list {
+    display: block;
+  }
+
+  footer .title {
+    padding-top: 0;
+    padding-bottom: 0px;
+  }
+
+  footer .logo-wrapper {
+    margin-top: 0;
+  }
+
+  footer .list {
+    padding: 13px 0 0;
+  }
+
+  footer .address {
+    max-width: 153px;
+    margin: 0 auto;
+  }
+
+  footer .ml-md-1 {
+    margin-left: -10px;
+  }
+  /* ------------------------------------------------ Footer section styles end  ------------------------------------------------ */
+}
+@media screen and (min-width: 1280px) {
+  /* ------------------------------------------------ Grid system in this break point start  ------------------------------------------------ */
+
+  .col-xl-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+  }
+
+  .col-xl-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+  }
+
+  .col-xl-5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 41.333333%;
+    flex: 0 0 41.333333%;
+  }
+
+  .col-xl-7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+  }
+
+  .col-xl-8 {
+    width: 66.666666%;
+  }
+
+  .col-xl-9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+  }
+
+  /* ------------------------------------------------ Grid system in this break point end  ------------------------------------------------ */
+  /* ------------------------------------------------ Header styles start  ------------------------------------------------ */
+
+  .container {
+    padding: 30px 137px 25px 130px;
+  }
+
+  .heading {
+    font-size: 36px;
+    margin-top: -125px;
+    line-height: 1.39;
+  }
+
+  .description {
+    font-size: 20px;
+    padding-left: 34px;
+    line-height: 1.85;
+    margin: 22px 0 47px;
+  }
+
+  .header-image {
+    height: 626px;
+    margin-left: -155px;
+  }
+
+  /* ------------------------------------------------ Header styles  end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Facilities section styles  end  ------------------------------------------------ */
+  .facilities .subtext {
+    margin-bottom: 72px;
+  }
+  .facilities .box {
+    padding: 31px 16px;
+  }
+
+  .facilities .box {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .facilities .resume {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .facilities .webinar {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .facilities .online-class {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  .facilities p {
+    padding-left: 30px;
+  }
+
+  /* ------------------------------------------------ Facilities section styles  end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Audience section styles  start  ------------------------------------------------ */
+
+  .audience {
+    padding: 70px 0 186px;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    padding-right: 0;
+    padding-left: 90px;
+  }
+
+  .swiper-container img {
+    width: 375px;
+  }
+
+  .text-wrapper p {
+    padding-left: 180px;
+  }
+  /* ------------------------------------------------ Audience section styles  end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Categories section styles start  ------------------------------------------------ */
+  .categories {
+    padding: 119.5px 0 106px;
+  }
+
+  .scrolling-wrapper-flexbox {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .scrolling-wrapper-flexbox .box {
+    margin: 0 9.4px 25.5px;
+  }
+  /* ------------------------------------------------ Categories section styles end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Members section styles start  ------------------------------------------------ */
+  .members .title {
+    font-size: 20px;
+  }
+
+  .members .sub-title {
+    font-size: 14px;
+  }
+
+  .members .info {
+    padding-left: 0;
+  }
+
+  .members .swiper-slide .user-image {
+    width: 218px;
+  }
+
+  .swiper-container p {
+    margin-top: 30px;
+  }
+
+  .members .audience-Swiper {
+    padding: 50px 60px;
+  }
+
+  .members .swiper-container-horizontal > .swiper-pagination-bullets,
+  .members .swiper-pagination-custom,
+  .members .swiper-pagination-fraction {
+    right: -23%;
+    top: -80px;
+  }
+
+  /* ------------------------------------------------ Members section styles end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Download App section styles start  ------------------------------------------------ */
+  .download-app .container {
+    padding-right: 137px;
+  }
+  /* ------------------------------------------------ Download App section styles end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Create profile section styles start  ------------------------------------------------ */
+  .create-profile {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+
+  .create-profile .container {
+    padding-bottom: 22px;
+  }
+
+  .create-profile .img-container {
+    height: 373px;
+  }
+  .create-profile .img-container .create-profile-image {
+    width: 100%;
+  }
+
+  .create-profile .wrapper {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 54%;
+    flex: 0 0 54%;
+  }
+
+  .create-profile .img-container {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 46%;
+    flex: 0 0 46%;
+    height: 530px;
+  }
+  /* ------------------------------------------------ Create profile  section styles end  ------------------------------------------------ */
+
+  /* ------------------------------------------------ Footer section styles start  ------------------------------------------------ */
+
+  footer {
+    padding: 81px 138px 0 223px;
+  }
+
+  footer .copy-right {
+    padding-bottom: 25px;
+  }
+
+  footer .mr-xl-4 {
+    margin-right: 42px;
+  }
+
+  /* ------------------------------------------------ Footer section styles end  ------------------------------------------------ */
+}
