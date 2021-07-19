@@ -1,0 +1,109 @@
+:root {
+  /* dark mode */
+  --dark-bg: #192734;
+  --black-color: #000000;
+}
+
+body {
+  color: var(--white-color);
+}
+
+header {
+  background-image: none;
+  background-color: var(--dark-bg);
+}
+
+.heading {
+  color: var(--white-color);
+}
+
+.facilities {
+  background-color: var(--dark-bg);
+}
+
+.facilities h2 {
+  color: var(--white-color);
+}
+
+.audience {
+  background-color: var(--dark-bg);
+}
+
+.audience .title {
+  color: var(--white-color);
+}
+
+.audience h3 {
+  color: var(--primary-color);
+}
+
+.categories {
+  background-color: var(--dark-bg);
+}
+
+.categories h2 {
+  color: var(--white-color);
+}
+
+.members {
+  background-color: var(--dark-bg);
+}
+
+.members .title {
+  color: var(--white-color);
+}
+
+.members .comment-title {
+  color: var(--white-color);
+}
+
+.members .info {
+  color: var(--white-color);
+}
+
+.download-app .title {
+  color: var(--white-color);
+}
+
+.download-app .text {
+  color: var(--primary-color);
+}
+
+.download-app {
+  background-color: var(--dark-bg);
+}
+
+.create-profile {
+  background-color: var(--dark-bg);
+}
+
+.create-profile .wrapper {
+  box-shadow: none;
+}
+
+.create-profile .title {
+  color: var(--white-color);
+}
+
+.create-profile .question {
+  color: var(--white-color);
+}
+
+.scrolling-wrapper-flexbox .box {
+  color: var(--black-color);
+}
+
+/* slider bullets */
+.members .swiper-pagination-bullet {
+  background-color: #6b9ed0;
+  opacity: 1;
+}
+
+.audience .swiper-pagination-bullet {
+  opacity: 0.6;
+}
+
+.audience .swiper-pagination-bullet-active {
+  background-color: var(--blue-color);
+  opacity: 1;
+}

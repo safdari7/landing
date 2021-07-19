@@ -862,7 +862,7 @@ footer .address {
   .members .comment-title {
     color: var(--title-forecolor);
     font-size: 30px;
-    margin-bottom: 3px;
+    margin-bottom: 8px;
   }
   .members .comment-container {
     margin: 0 auto;
